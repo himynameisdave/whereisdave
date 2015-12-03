@@ -980,6 +980,18 @@
         }
       }
     },
+    "consolidate": {
+      "version": "0.13.1",
+      "from": "consolidate@*",
+      "resolved": "https://registry.npmjs.org/consolidate/-/consolidate-0.13.1.tgz",
+      "dependencies": {
+        "bluebird": {
+          "version": "2.10.2",
+          "from": "bluebird@>=2.9.26 <3.0.0",
+          "resolved": "https://registry.npmjs.org/bluebird/-/bluebird-2.10.2.tgz"
+        }
+      }
+    },
     "express": {
       "version": "4.13.3",
       "from": "https://registry.npmjs.org/express/-/express-4.13.3.tgz",
