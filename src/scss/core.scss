@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@import "materialize";
+
+$amber: #ffc107;
+$intl-orange: #C0362C;
+
+
+.black {
+  background-color: #333 !important;
+}
+.black-text {
+  color: #333 !important;
+}
+
+.mdi-navigation-menu {
+  margin-left: 1rem;
+}
+
+.current-city {
+  background: #333;
+  color: $amber;
+  display: inline-block;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+nav a.button-collapse {
+  display: block;
+}
+
+.side-nav {
+  li {
+    &:hover {
+      background-color: $amber;
+      .nav-item-link {
+        color: #333 !important;
+      }
+    }
+  }
+}
+
+// .nav-item-link {
+//   &:hover {
+//     background-color: $amber;
+//     color: #333;
+//   }
+// }

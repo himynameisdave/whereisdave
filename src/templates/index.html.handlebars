@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{pageTitle}}</title>
+    {{> partials/head}}
+  </head>
+  <body class="amber black-text">
+    {{> partials/nav}}
+    {{#equal pageType 'splash'}}
+      {{> partials/splash}}
+    {{/equal}}
+    {{#equal pageType 'post'}}
+      {{> partials/post}}
+    {{/equal}}
+    <script type="text/javascript" src="/js/core.js"></script>
+  </body>
+</html>

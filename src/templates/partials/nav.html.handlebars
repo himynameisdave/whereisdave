@@ -1,0 +1,14 @@
+<nav class="black amber-text">
+  <div class="container">
+    {{#if currentCity.show}}
+    <ul class="right">
+      <span class="badge amber black-text">Dave is currently in {{currentCity.city}}</span>
+    </ul>
+    {{/if}}
+    <ul id="slide-out" class="side-nav black amber-text">
+      <li><a href="cali/day-one" class="nav-item-link waves-effect waves-light amber-text">Day One</a></li>
+      <li><a href="cali/day-two" class="nav-item-link amber-text">Day Two</a></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+  </div>
+</nav>
