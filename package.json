@@ -1,11 +1,11 @@
 {
   "name": "whereisdave",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Place for me to post some crap about my trip.",
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
-    "compile-posts": "node posts/compile-posts.js && gulp copy-posts"
+    "compile-posts": "node posts/compile-posts.js && gulp copy-posts && gulp copy-all"
   },
   "engines": {
     "node": "4.2.1"
