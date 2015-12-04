@@ -1,13 +1,26 @@
 <nav class="black amber-text">
   <div class="container">
     {{#if currentCity.show}}
-    <ul class="right">
-      <span class="badge amber black-text">Dave is currently in {{currentCity.city}}</span>
-    </ul>
+      {{#if currentCity.isFlying}}
+        <div class="right">
+          <span class="chip amber black-text">Dave is currently flying to {{currentCity.name}}</span>
+        </div>
+      {{else}}
+      <div class="right">
+        <span class="chip amber black-text">Dave is currently in {{currentCity.name}}</span>
+      </div>
+      {{/if}}
     {{/if}}
     <ul id="slide-out" class="side-nav black amber-text">
-      <li><a href="cali/day-one" class="nav-item-link waves-effect waves-light amber-text">Day One</a></li>
-      <li><a href="cali/day-two" class="nav-item-link amber-text">Day Two</a></li>
+      <li class="no-hover">
+        <a href="/" class="block-me">
+          <img class="responsive-img circle side-nav-face" src="/img/face.jpg" />
+        </a>
+      </li>
+      <!-- NEED A LOOP HERE... -->
+      <li>
+        <a href="cali/day-one" class="nav-item-link amber-text">Day One</a>
+      </li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>

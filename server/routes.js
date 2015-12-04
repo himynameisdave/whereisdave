@@ -8,14 +8,17 @@ const Routes = require("express").Router(),
      *  Defines the routes to our handlebars pages
      */
     Routes.get('/cali/:post', function(req, res, next) {
-      let post = req.params.post;
+      let city = getCurrentCity(),
+          post = req.params.post;
       res.render('index', {
+        name:        post,
         pageType:    "post",
         pageTitle:   "whereisdave | "+post,
         templatePath: "posts/"+post,
         currentCity: {
           show: true,
-          city: getCurrentCity()
+          isFlying: city.isFlying,
+          name: city.city
         }
       });
     });
@@ -26,12 +29,14 @@ const Routes = require("express").Router(),
     });
     //  splash/index page
     Routes.get('/', function(req, res) {
+      let city = getCurrentCity();
       res.render('index', {
         pageType:    "splash",
         pageTitle:   "whereisdave",
         currentCity: {
           show: false,
-          city: getCurrentCity()
+          isFlying: city.isFlying,
+          name: city.city
         }
       });
     });

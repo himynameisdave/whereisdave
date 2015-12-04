@@ -1,6 +1,12 @@
 <div class="section black-text" id="index-banner">
   <div class="container">
-    <h2 class="header thin center black-text">Dave is in <span class="current-city">{{currentCity.city}}</span></h2>
+    <h2 class="header thin center black-text">
+      {{#if currentCity.isFlying}}
+        Dave is flying to <span class="current-city">{{currentCity.name}}</span>
+      {{else}}
+        Dave is in <span class="current-city">{{currentCity.name}}</span>
+      {{/if}}
+    </h2>
     <div class="row center">
       <div class="col s12">
         <p class="flow-text">

@@ -22,7 +22,7 @@ gulp.task( 'watch', function(){
 /****
  *   Copy Tasks
  */
-gulp.task( 'copy-all', [ 'copy-templates', 'copy-fonts' ] );
+gulp.task( 'copy-all', [ 'copy-templates', 'copy-fonts', 'copy-images' ] );
 gulp.task( 'copy-templates', function(){
   return gulp.src( './src/templates/**' )
     .pipe( gulp.dest( './public/templates/' ) );
@@ -30,6 +30,11 @@ gulp.task( 'copy-templates', function(){
 gulp.task( 'copy-fonts', function() {
   return gulp.src( './src/font/**' )
     .pipe( gulp.dest( './public/font/' ) );
+});
+gulp.task( 'copy-images', function() {
+  return gulp.src( './src/img/**' )
+    .pipe(plug.imagemin())
+    .pipe( gulp.dest( './public/img/' ) );
 });
 
 

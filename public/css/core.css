@@ -8644,6 +8644,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   color: #333 !important; }
 
 .mdi-navigation-menu {
+  color: #ffc107;
   margin-left: 1rem; }
 
 .current-city {
@@ -8660,3 +8661,37 @@ nav a.button-collapse {
   background-color: #ffc107; }
   .side-nav li:hover .nav-item-link {
     color: #333 !important; }
+
+.neato-link {
+  color: #0ac;
+  position: relative;
+  transition: color 0.4s ease-in-out; }
+  .neato-link:after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #0ac;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    transition: width 0.4s ease-in-out; }
+  .neato-link:hover {
+    color: #333; }
+    .neato-link:hover:after {
+      width: 100%; }
+
+.block-me {
+  display: block !important;
+  height: auto !important; }
+
+.side-nav-face {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  width: 80%; }
+
+.side-nav li:first-child:hover {
+  background-color: inherit; }
