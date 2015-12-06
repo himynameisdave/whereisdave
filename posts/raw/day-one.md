@@ -59,3 +59,18 @@ So as soon as I landed at SFO my phone connected to the network and I got a mass
 ![I thought this was cool](http://i.imgur.com/tyPFNCD.jpg)
 
 Check back later, the day is still young!
+
+#### BART to the Hotel
+
+Had to mull around the airport for awhile until I found where the BART stop was. Regardless I found it, and let me tell you it is cool as hell. It's basically like GO Transit meets the TTC subway, but electrified so it goes so fast. From the airport to downtown was about 20-25mins, and it stops like right downtown too, [literally 2 blocks](http://bit.ly/1R1jbWn) from my hotel. The first thing I saw when I climbed out of the BART:
+
+![The architechture here is so boss](http://i.imgur.com/bHkyvDI.jpg)
+
+Pretty sweet. I walk over to the Desmond Hotel and there's like a buzzer to unlock the door, I suppose to keep the ne'r'do'wellers out. Regardless I got in and was hit with the overwhelming smell of incense - and I like incense but this was INTENSE INCENSE! Whatever though they let me check in an hour before their official "check in time" which was cool of them. I went up to my room, on the 4th floor, and it's like a keycard lock system and I was pleased to see that the lock was very serious. I opened my door, and instead of incense it was like they had pumped 100% fresh air into the room. I'm not kidding it smelled amazing, and the window was just slightly open letting in a nice breeze. Check it out:
+
+![404 - Dave's Room Not Found on This Server!](http://i.imgur.com/DGYUb9s.jpg)
+![](http://i.imgur.com/7USgDvj.jpg)
+
+It also has like a huge TV, microwave and mini fridge. So yeah it's pretty awesome as far as a place to stay goes. My view from the window could be better though:
+
+![Window faces an ally, but there is still a ton of light](http://i.imgur.com/kc2nskl.jpg)
