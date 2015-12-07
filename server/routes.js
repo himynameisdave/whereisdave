@@ -27,6 +27,21 @@ const Routes = require("express").Router(),
     Routes.get('/cali/', function(req, res) {
       res.redirect("/")
     });
+
+    //  splash/index page
+    Routes.get('/about', function(req, res) {
+      let city = getCurrentCity();
+      res.render('index', {
+        pageType:    "about",
+        pageTitle:   "whereisdave | about",
+        currentCity: {
+          show: true,
+          isFlying: city.isFlying,
+          name: city.city
+        }
+      });
+    });
+    
     //  splash/index page
     Routes.get('/', function(req, res) {
       let city = getCurrentCity();

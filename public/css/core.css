@@ -8695,3 +8695,7 @@ nav a.button-collapse {
 
 .side-nav li:first-child:hover {
   background-color: inherit; }
+
+.bottom-plz {
+  position: absolute;
+  bottom: 0; }
