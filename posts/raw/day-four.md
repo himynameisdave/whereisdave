@@ -64,11 +64,11 @@ Overall it was super cool, and also terrifyingly creepy. It was also interesting
 
 I returned from the island to find myself close to Fisherman's Wharf, which I had visited yesterday but not extensively. I kid you not I was so close to buying a shark's jaws to hang on my wall at home, and my only hesitation was "how the hell am I going to explain that to the TSA agent at the airport". I opted instead for a single shark tooth.
 
+![](http://i.imgur.com/SGiWbOX.jpg)
+
 ![$40? What a steal!!!!](http://i.imgur.com/a23AKvG.jpg)
 
 ![Still pretty nifty](http://i.imgur.com/rxWRhOQ.jpg)
-
-![](http://i.imgur.com/SGiWbOX.jpg)
 
 As cool as all of this stuff was, it wasn't nearly as amazing as what I saw next...
 
