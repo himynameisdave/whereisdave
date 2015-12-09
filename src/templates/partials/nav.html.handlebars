@@ -17,19 +17,11 @@
           <img class="responsive-img circle side-nav-face" src="/img/face.jpg" />
         </a>
       </li>
-      <!-- NEED A LOOP HERE... -->
-      <li>
-        <a href="/cali/day-one" class="nav-item-link amber-text">Day One</a>
-      </li>
-      <li>
-        <a href="/cali/day-two" class="nav-item-link amber-text">Day Two - Sick Day</a>
-      </li>
-      <li>
-        <a href="/cali/day-three" class="nav-item-link amber-text">Day Three</a>
-      </li>
-      <li>
-        <a href="/cali/day-four" class="nav-item-link amber-text">Day Four</a>
-      </li>
+      {{#each navItems}}
+        <li>
+          <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
+        </li>
+      {{/each}}
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>

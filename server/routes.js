@@ -1,7 +1,25 @@
 "use strict";
 
 const Routes = require("express").Router(),
-      getCurrentCity = require("./getCurrentCity");
+      getCurrentCity = require("./getCurrentCity"),
+      navItems = [
+        {
+          href: '/cali/day-one',
+          displayName: 'Day One'
+        },{
+          href: '/cali/day-two',
+          displayName: 'Day Two - Sick Day'
+        },{
+          href: '/cali/day-three',
+          displayName: 'Day Three'
+        },{
+          href: '/cali/day-four',
+          displayName: 'Day Four'
+        },{
+          href: '/cali/day-five',
+          displayName: 'Day Five'
+        }
+      ];
 
 
     /**
@@ -14,6 +32,7 @@ const Routes = require("express").Router(),
         name:        post,
         pageType:    "post",
         pageTitle:   "whereisdave | "+post,
+        navItems: navItems,
         templatePath: "posts/"+post,
         currentCity: {
           show: true,
@@ -34,6 +53,7 @@ const Routes = require("express").Router(),
       res.render('index', {
         pageType:    "about",
         pageTitle:   "whereisdave | about",
+        navItems: navItems,
         currentCity: {
           show: true,
           isFlying: city.isFlying,
@@ -41,13 +61,14 @@ const Routes = require("express").Router(),
         }
       });
     });
-    
+
     //  splash/index page
     Routes.get('/', function(req, res) {
       let city = getCurrentCity();
       res.render('index', {
         pageType:    "splash",
         pageTitle:   "whereisdave",
+        navItems: navItems,
         currentCity: {
           show: false,
           isFlying: city.isFlying,
