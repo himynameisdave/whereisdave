@@ -21,6 +21,9 @@ const Routes = require("express").Router(),
         },{
           href: '/cali/day-six',
           displayName: 'Day Six'
+        },{
+          href: '/cali/day-seven',
+          displayName: 'Day Seven'
         }
       ];
 

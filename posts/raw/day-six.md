@@ -3,10 +3,9 @@
 
 I woke up feeling well rested this morning, and with a beautiful breeze coming through the open windows. Katie has a little coffee machine that's all ready to go so all I had to do was turn it on :) I drank some coffee and had one of her delicious banana pecan muffins while I wrote day five's post and planned out my day. Today, Dave does [Hollywoo](http://i.imgur.com/pY4XNYn.jpg)!
 
+#### Hollywoo
 
-#### Hollywood
-
-I know I've said this before but I'll say it again, LA IS HUGE. I left the house around 9:30 in the morning, and was still feeling a little peckish so I stopped in at a nearby McDonalds for some hash browns (because I haven't had their hash browns in like forever). I then proceeded to walk [all the way to Hollywood Blvd.](https://goo.gl/maps/vhHnEwDhBiq), which is by no means close because it's LA and nothing is close.
+I know I've said this before but I'll say it again, LA IS HUGE. I left the house around 9:30 in the morning, and was still feeling a little peckish so I stopped in at a nearby McDonalds for some hash browns (because I haven't had their hash browns in like forever). I then proceeded to walk [all the way to Hollywoo Blvd.](https://goo.gl/maps/vhHnEwDhBiq), which is by no means close because it's LA and nothing is close.
 
 The weather is very very nice here, sunshine and it was warm enough to be in a t-shirt. I could have even got away with shorts. I started up a hill and caught my first (very distant) glimpse of the Hollywoo sign. Can you see it?
 
@@ -22,7 +21,7 @@ Here's the Capitol Records building (much smaller than I imagined):
 
 ![Capitol Records building](http://i.imgur.com/Vn8cWw9.jpg)
 
-![Looking down Hollywood Blvd.](http://i.imgur.com/iIS0Sbe.jpg)
+![Looking down Hollywoo Blvd.](http://i.imgur.com/iIS0Sbe.jpg)
 
 At this point after all the walking I was hungry, so I stopped into this place called Melt on Sunset which does like really quality grilled cheese sammies:
 
@@ -32,7 +31,7 @@ By this point it was easier to see the Hollywoo sign:
 
 ![There was a blimp advertising the Peanut movie](http://i.imgur.com/1Mb7V5z.jpg)
 
-I walked further down Hollywood Blvd. and saw Kimmel's studios.
+I walked further down Hollywoo Blvd. and saw Kimmel's studios.
 
 ![Very cool...](http://i.imgur.com/vhgndHt.jpg)
 

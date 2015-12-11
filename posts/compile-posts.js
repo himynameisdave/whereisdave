@@ -39,7 +39,7 @@ let renderer = new marked.Renderer();
     };
     //  how to render links
     renderer.link = (href, title, text) => {
-      return '<a href="'+href+'" class="neato-link">'+text+'</a>';
+      return '<a href="'+href+'" class="neato-link" target="_blank">'+text+'</a>';
     };
 
 
