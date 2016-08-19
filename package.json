@@ -1,6 +1,6 @@
 {
   "name": "whereisdave",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "Place for me to post some crap about my trip.",
   "main": "server/server.js",
   "scripts": {
