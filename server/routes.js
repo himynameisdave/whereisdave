@@ -1,8 +1,48 @@
 "use strict";
 
-const Routes = require("express").Router(),
-      getCurrentCity = require("./getCurrentCity"),
-      navItems = [
+const Routes = require("express").Router()
+const getCurrentCity = require("./getCurrentCity");
+
+const _navItems = {
+  cali: [
+    {
+      href: '/cali/day-one',
+      displayName: 'Day One'
+    },{
+      href: '/cali/day-two',
+      displayName: 'Day Two - Sick Day'
+    },{
+      href: '/cali/day-three',
+      displayName: 'Day Three'
+    },{
+      href: '/cali/day-four',
+      displayName: 'Day Four'
+    },{
+      href: '/cali/day-five',
+      displayName: 'Day Five'
+    },{
+      href: '/cali/day-six',
+      displayName: 'Day Six'
+    },{
+      href: '/cali/day-seven',
+      displayName: 'Day Seven'
+    },{
+      href: '/cali/day-eight',
+      displayName: 'Day Eight'
+    },{
+      href: '/cali/day-nine',
+      displayName: 'Day Nine'
+    }
+  ],
+  nyc: [
+    {
+      href: '/nyc/day-one',
+      displayName: '01 - '
+    }
+  ]
+};
+
+const navItems = [
         {
           href: '/cali/day-one',
           displayName: 'Day One'
@@ -54,8 +94,13 @@ const Routes = require("express").Router(),
       });
     });
 
-    //  cali will re-direct back to splash
+    //  /cali will now re-direct back to splash
     Routes.get('/cali/', function(req, res) {
+      res.redirect("/cali/day-one")
+    });
+
+    //  /nyc will re-direct back to splash
+    Routes.get('/nyc/', function(req, res) {
       res.redirect("/")
     });
 

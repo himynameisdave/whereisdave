@@ -29,16 +29,16 @@ nav a.button-collapse {
   display: block;
 }
 
-.side-nav {
-  li {
-    &:hover {
-      background-color: $amber;
-      .nav-item-link {
-        color: #333 !important;
-      }
-    }
-  }
-}
+// .side-nav {
+//   li {
+//     &:hover {
+//       background-color: $amber;
+//       .nav-item-link {
+//         color: #333 !important;
+//       }
+//     }
+//   }
+// }
 
 .neato-link {
   color: #0ac;
@@ -76,18 +76,42 @@ nav a.button-collapse {
   margin-top: 2rem;
   width: 80%;
 }
+//
+// .side-nav li:first-child:hover{
+//   background-color: inherit;
+// }
 
-.side-nav li:first-child:hover{
-  background-color: inherit;
+.nav-main-list,
+.nav-sub-list {
+  background-color: #333;
+  color: $amber;
+  padding: 0;
+  &:hover {
+    background-color: #333;
+    color: $amber !important;
+  }
+  .collapsible-header {
+    color: $amber !important;
+  }
+  > * {
+    padding: 0;
+    width: 100%;
+    background-color: #333;
+    color: $amber;
+    &:hover {
+      background-color: $amber !important;
+      color: #333 !important;
+    }
+  }
 }
 
-
-// .nav-item-link {
-//   &:hover {
-//     background-color: $amber;
-//     color: #333;
-//   }
-// }
+.nav-item-link {
+  color: $amber !important;
+  &:hover {
+    background-color: $amber !important;
+    color: #333 !important;
+  }
+}
 
 .bottom-plz {
   position: absolute;
@@ -98,3 +122,37 @@ nav a.button-collapse {
   max-height: 700px;
   margin: 0 auto;
 }
+
+.no-hover {
+  background: transparent;
+  &:hover {
+    background: transparent !important;
+  }
+}
+
+.side-nav li:hover, .side-nav li.active {
+  background: inherit;
+}
+
+// .nav-main-list,
+// .nav-sub-list {
+//   background: transparent;
+//   &:hover {
+//     background: transparent;
+//   }
+//   > * {
+//     background: transparent;
+//     &:hover {
+//       background: transparent;
+//     }
+//   }
+// }
+//
+// .collapsible-header {
+//
+// }
+//
+// .side-nav .collapsible-body {
+//   background-color: #333 !important;
+//   color: $amber !important;
+// }

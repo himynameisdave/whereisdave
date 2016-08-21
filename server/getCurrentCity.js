@@ -21,11 +21,11 @@ const getCurrentCity = () => {
   //  Set day and hour if no early return
   d.day = moment().utc().dayOfYear();
   d.hour = moment().utc().hour();
-
   //  check for if it's a day between our days gone
   if (d.day >= 234 && d.day <= 240) {
     //  If it's the day we fly out
     if (d.day === 234) {
+      if (d.hour < 11) return atHome;
       if (d.hour >= 11 && d.hour <= 13) {
         return { isFlying: true, city: city.NYC };
       }
@@ -49,5 +49,4 @@ const getCurrentCity = () => {
     return atHome;
   }
 };
-
 module.exports = getCurrentCity;

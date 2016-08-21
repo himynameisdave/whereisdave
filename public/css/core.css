@@ -8657,11 +8657,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 nav a.button-collapse {
   display: block; }
 
-.side-nav li:hover {
-  background-color: #ffc107; }
-  .side-nav li:hover .nav-item-link {
-    color: #333 !important; }
-
 .neato-link {
   color: #0ac;
   position: relative;
@@ -8693,8 +8688,34 @@ nav a.button-collapse {
   margin-top: 2rem;
   width: 80%; }
 
-.side-nav li:first-child:hover {
-  background-color: inherit; }
+.nav-main-list,
+.nav-sub-list {
+  background-color: #333;
+  color: #ffc107;
+  padding: 0; }
+  .nav-main-list:hover,
+  .nav-sub-list:hover {
+    background-color: #333;
+    color: #ffc107 !important; }
+  .nav-main-list .collapsible-header,
+  .nav-sub-list .collapsible-header {
+    color: #ffc107 !important; }
+  .nav-main-list > *,
+  .nav-sub-list > * {
+    padding: 0;
+    width: 100%;
+    background-color: #333;
+    color: #ffc107; }
+    .nav-main-list > *:hover,
+    .nav-sub-list > *:hover {
+      background-color: #ffc107 !important;
+      color: #333 !important; }
+
+.nav-item-link {
+  color: #ffc107 !important; }
+  .nav-item-link:hover {
+    background-color: #ffc107 !important;
+    color: #333 !important; }
 
 .bottom-plz {
   position: absolute;
@@ -8703,3 +8724,11 @@ nav a.button-collapse {
 .responsive-img {
   max-height: 700px;
   margin: 0 auto; }
+
+.no-hover {
+  background: transparent; }
+  .no-hover:hover {
+    background: transparent !important; }
+
+.side-nav li:hover, .side-nav li.active {
+  background: inherit; }
