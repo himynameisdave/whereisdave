@@ -10,10 +10,10 @@ const fs       = require("fs"),
           })
         });
       },
-      writeHandlebars = (data, filename) => {
+      writeHandlebars = (data, dir, filename) => {
         let hbsFilename = filename.split('.md')[0]+".html.handlebars";
         return new Promise((res, rej)=>{
-          fs.writeFile( "./posts/compiled/"+hbsFilename, data, "utf8", (err)=>{
+          fs.writeFile( "./posts/compiled/"+dir+"/"+hbsFilename, data, "utf8", (err)=>{
             if(err) rej(err);
             res("Wrote "+hbsFilename+" successfully!");
           });
@@ -44,29 +44,33 @@ let renderer = new marked.Renderer();
 
 
 
-
-
 //  Loop through the raw folder
-fs.readdir(rawPath, (err, files) => {
+fs.readdir(rawPath, (err, trips) => {
   if(err) throw err;
   //  for each markdown file
-  files.forEach( (file) => {
-    //  first read it
-    readMd( rawPath+file )
-      //  then parse it from markdown
-      .then((rawData)=>{
-        return marked(rawData, { renderer: renderer });
-      })
-      //  then write the converted data to a handlebars file
-      .then((mdData)=>{
-        writeHandlebars(mdData, file)
-          .then(console.log)
+  trips.filter(trip => trip !== '.DS_Store')
+  .forEach(trip => {
+    fs.readdir(`${rawPath}${trip}/`, (err, files) => {
+      files.filter(trip => trip !== '.DS_Store')
+      .forEach(file => {
+        //  first read it
+        readMd(`${rawPath}${trip}/${file}`)
+          //  then parse it from markdown
+          .then((rawData)=>{
+            return marked(rawData, { renderer: renderer });
+          })
+          //  then write the converted data to a handlebars file
+          .then((mdData)=>{
+            writeHandlebars(mdData, trip, file)
+            .then(console.log)
+            .catch((e)=>{
+              console.warn(e);
+            });
+          })
           .catch((e)=>{
             console.warn(e);
           });
-      })
-      .catch((e)=>{
-        console.warn(e);
       });
+    });
   });
 });

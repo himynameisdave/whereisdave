@@ -17,11 +17,38 @@
           <img class="responsive-img circle side-nav-face" src="/img/face.jpg" />
         </a>
       </li>
-      {{#each navItems}}
-        <li>
-          <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
-        </li>
-      {{/each}}
+      <li class="no-hover">
+        <ul class="nav-main-list collapsible collapsible-accordion" data-collapsible="accordion">
+          <li class="no-hover">
+            <div class="collapsible-header">
+              California
+            </div>
+            <div class="collapsible-body">
+              <ul class="nav-sub-list">
+                {{#each navItems.cali}}
+                <li>
+                  <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </li>
+          <li class="no-hover">
+            <div class="collapsible-header">
+              New York City
+            </div>
+            <div class="collapsible-body">
+              <ul class="nav-sub-list">
+                {{#each navItems.nyc}}
+                <li>
+                  <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
+                </li>
+                {{/each}}
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </li>
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
   </div>
