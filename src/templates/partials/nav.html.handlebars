@@ -25,7 +25,7 @@
             </div>
             <div class="collapsible-body">
               <ul class="nav-sub-list">
-                {{#each navItems}}
+                {{#each navItems.cali}}
                 <li>
                   <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
                 </li>
@@ -38,7 +38,13 @@
               New York City
             </div>
             <div class="collapsible-body">
-              asjkdhaskjdhkjashdkjhakjsdhkasdkjahsdkjhakjsdhjkahdskjahs
+              <ul class="nav-sub-list">
+                {{#each navItems.nyc}}
+                <li>
+                  <a href="{{this.href}}" class="nav-item-link amber-text">{{this.displayName}}</a>
+                </li>
+                {{/each}}
+              </ul>
             </div>
           </li>
         </ul>

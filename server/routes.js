@@ -3,7 +3,7 @@
 const Routes = require("express").Router()
 const getCurrentCity = require("./getCurrentCity");
 
-const _navItems = {
+const navItems = {
   cali: [
     {
       href: '/cali/day-one',
@@ -36,12 +36,13 @@ const _navItems = {
   ],
   nyc: [
     {
-      href: '/nyc/day-one',
-      displayName: '01 - '
+      href: '/nyc/day-zero',
+      displayName: '00 - Night Before'
     }
   ]
 };
 
+/*
 const navItems = [
         {
           href: '/cali/day-one',
@@ -72,12 +73,29 @@ const navItems = [
           displayName: 'Day Nine'
         }
       ];
-
+*/
 
     /**
      *  Defines the routes to our handlebars pages
      */
     Routes.get('/cali/:post', function(req, res, next) {
+      let city = getCurrentCity(),
+          post = req.params.post;
+      res.render('index', {
+        name:        post,
+        pageType:    "post",
+        pageTitle:   "whereisdave | "+post,
+        navItems: navItems,
+        templatePath: "posts/"+post,
+        currentCity: {
+          show: true,
+          isFlying: city.isFlying,
+          name: city.city
+        }
+      });
+    });
+
+    Routes.get('/nyc/:post', function(req, res, next) {
       let city = getCurrentCity(),
           post = req.params.post;
       res.render('index', {
